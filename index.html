@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reclaiming Your Self-Worth - Interactive Checklist</title>
+    <title>Staying Motivated - Interactive Checklist</title>
     <style>
         :root {
-            --primary-color: #d4b483; /* Beige */
-            --secondary-color: #a78a6e;
-            --accent-color: #e8d9c5;
-            --light-color: #f9f5f0;
-            --dark-color: #5a4a3a;
-            --success-color: #8ba888;
+            --primary-color: #f5e6a6; /* Pale Yellow */
+            --secondary-color: #d4c46a; /* Warm Gold */
+            --accent-color: #f8f1d5; /* Cream */
+            --light-color: #fffdf5; /* Off-White */
+            --dark-color: #5a543a; /* Earthy Brown */
+            --success-color: #a8b488; /* Soft Green */
         }
         
-        /* BEIGE BANNER */
+        /* PALE YELLOW BANNER */
         .checklist-banner {
             background-color: var(--primary-color);
             color: var(--dark-color);
@@ -41,7 +41,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: var(--dark-color);
-            background-color: #f8f4ee;
+            background-color: #faf9f0;
             margin: 0;
             padding: 20px;
         }
@@ -73,7 +73,7 @@
         }
         
         .checklist-item:hover {
-            background-color: rgba(212, 180, 131, 0.1);
+            background-color: rgba(245, 230, 166, 0.1);
         }
         
         .checklist-item input[type="checkbox"] {
@@ -220,7 +220,7 @@
         }
         
         .reset-btn {
-            background-color: #c4a17a;
+            background-color: #c4b67a;
         }
         
         .print-btn {
@@ -254,10 +254,10 @@
 </head>
 <body>
     <div class="container">
-        <!-- BEIGE BANNER -->
+        <!-- PALE YELLOW BANNER -->
         <div class="checklist-banner">
-            <h1>RECLAIMING YOUR SELF-WORTH</h1>
-            <p class="subtitle">A Gentle Self-Check for Healthy Esteem</p>
+            <h1>STAYING MOTIVATED</h1>
+            <p class="subtitle">How To Keep Going When the Going Gets Tough</p>
         </div>
 
         <div class="progress-text">Progress: <span id="progress-percent">0</span>%</div>
@@ -266,20 +266,21 @@
         </div>
         
         <div class="celebration" id="celebration">
-            <h2>✨ Self-Worth Recognized! ✨</h2>
-            <p>You've completed your self-assessment - an important step toward valuing yourself fully.</p>
+            <h2>🚀 Motivation Restored! 🚀</h2>
+            <p>You've completed your motivation reboot checklist!</p>
+            <p><em>"One small action can reboot your whole mindset."</em></p>
         </div>
         
         <div class="section">
-            <h2>Boundary Awareness</h2>
+            <h2>Reconnect With Purpose</h2>
             
             <div class="checklist-item">
                 <input type="checkbox" id="item1">
                 <div class="checklist-text">
-                    <label for="item1">I say "yes" when I really want to say "no"</label>
+                    <label for="item1">What's my "why" for doing this? (Reconnect with the deeper reason)</label>
                     <div class="notes-box" id="notes1">
-                        <h4>Reflection & Action Plan:</h4>
-                        <textarea placeholder="Example situation where this happened...&#10;&#10;How I'll practice saying no:"></textarea>
+                        <h4>My Motivation Blueprint:</h4>
+                        <textarea placeholder="My deeper 'why' is...&#10;&#10;How I'll remind myself of this daily:"></textarea>
                     </div>
                 </div>
                 <button class="notes-btn" onclick="toggleNotes('notes1')">📝 Plan</button>
@@ -288,10 +289,10 @@
             <div class="checklist-item">
                 <input type="checkbox" id="item2">
                 <div class="checklist-text">
-                    <label for="item2">I apologise for things that aren't my fault</label>
+                    <label for="item2">What progress have I already made? (Even tiny steps count)</label>
                     <div class="notes-box" id="notes2">
-                        <h4>Reflection & Action Plan:</h4>
-                        <textarea placeholder="Recent unnecessary apology...&#10;&#10;Alternative response I'll try:"></textarea>
+                        <h4>Progress Tracker:</h4>
+                        <textarea placeholder="3 small wins I've achieved:&#10;1.&#10;2.&#10;3."></textarea>
                     </div>
                 </div>
                 <button class="notes-btn" onclick="toggleNotes('notes2')">📝 Plan</button>
@@ -300,10 +301,10 @@
             <div class="checklist-item">
                 <input type="checkbox" id="item3">
                 <div class="checklist-text">
-                    <label for="item3">I find it hard to set boundaries</label>
+                    <label for="item3">What would I tell a friend in this situation? (Now, tell it to yourself)</label>
                     <div class="notes-box" id="notes3">
-                        <h4>Reflection & Action Plan:</h4>
-                        <textarea placeholder="Where I need stronger boundaries...&#10;&#10;One boundary I'll set this week:"></textarea>
+                        <h4>Self-Compassion Statement:</h4>
+                        <textarea placeholder="To my friend I'd say...&#10;&#10;Now to myself:"></textarea>
                     </div>
                 </div>
                 <button class="notes-btn" onclick="toggleNotes('notes3')">📝 Plan</button>
@@ -311,15 +312,15 @@
         </div>
         
         <div class="section">
-            <h2>Self-Expression</h2>
+            <h2>Action Strategies</h2>
             
             <div class="checklist-item">
                 <input type="checkbox" id="item4">
                 <div class="checklist-text">
-                    <label for="item4">I downplay my achievements</label>
+                    <label for="item4">Can I simplify the task or break it into smaller steps?</label>
                     <div class="notes-box" id="notes4">
-                        <h4>Reflection & Action Plan:</h4>
-                        <textarea placeholder="Recent achievement I minimized...&#10;&#10;How I'll acknowledge it properly:"></textarea>
+                        <h4>Task Breakdown:</h4>
+                        <textarea placeholder="Current challenge:&#10;&#10;Simpler steps:&#10;1.&#10;2.&#10;3."></textarea>
                     </div>
                 </div>
                 <button class="notes-btn" onclick="toggleNotes('notes4')">📝 Plan</button>
@@ -328,10 +329,10 @@
             <div class="checklist-item">
                 <input type="checkbox" id="item5">
                 <div class="checklist-text">
-                    <label for="item5">I avoid compliments or deflect them</label>
+                    <label for="item5">What reward can I plan once I take action? (It doesn't have to be big)</label>
                     <div class="notes-box" id="notes5">
-                        <h4>Reflection & Action Plan:</h4>
-                        <textarea placeholder="Recent compliment I deflected...&#10;&#10;Practice response: 'Thank you, I...'"></textarea>
+                        <h4>Reward System:</h4>
+                        <textarea placeholder="After completing...&#10;&#10;I'll reward myself with..."></textarea>
                     </div>
                 </div>
                 <button class="notes-btn" onclick="toggleNotes('notes5')">📝 Plan</button>
@@ -340,10 +341,10 @@
             <div class="checklist-item">
                 <input type="checkbox" id="item6">
                 <div class="checklist-text">
-                    <label for="item6">I fear being "too much" or "not enough"</label>
+                    <label for="item6">Is perfectionism slowing me down? (Progress > perfection)</label>
                     <div class="notes-box" id="notes6">
-                        <h4>Reflection & Action Plan:</h4>
-                        <textarea placeholder="When I felt this way recently...&#10;&#10;Affirmation to counter this:"></textarea>
+                        <h4>Perfectionism Check:</h4>
+                        <textarea placeholder="Where I'm being too perfectionistic:&#10;&#10;'Good enough' looks like:"></textarea>
                     </div>
                 </div>
                 <button class="notes-btn" onclick="toggleNotes('notes6')">📝 Plan</button>
@@ -351,15 +352,15 @@
         </div>
         
         <div class="section">
-            <h2>Relationship Patterns</h2>
+            <h2>Inspiration Boosters</h2>
             
             <div class="checklist-item">
                 <input type="checkbox" id="item7">
                 <div class="checklist-text">
-                    <label for="item7">I tolerate poor treatment to avoid being alone</label>
+                    <label for="item7">What inspired me to begin in the first place?</label>
                     <div class="notes-box" id="notes7">
-                        <h4>Reflection & Action Plan:</h4>
-                        <textarea placeholder="Example of tolerated behavior...&#10;&#10;My new standard:"></textarea>
+                        <h4>Inspiration Journal:</h4>
+                        <textarea placeholder="My original inspiration was...&#10;&#10;How I can reconnect with that energy:"></textarea>
                     </div>
                 </div>
                 <button class="notes-btn" onclick="toggleNotes('notes7')">📝 Plan</button>
@@ -368,10 +369,10 @@
             <div class="checklist-item">
                 <input type="checkbox" id="item8">
                 <div class="checklist-text">
-                    <label for="item8">I second-guess my decisions constantly</label>
+                    <label for="item8">What's one thing I can do next, just one?</label>
                     <div class="notes-box" id="notes8">
-                        <h4>Reflection & Action Plan:</h4>
-                        <textarea placeholder="Recent decision I doubted...&#10;&#10;How I'll trust myself next time:"></textarea>
+                        <h4>Next Small Step:</h4>
+                        <textarea placeholder="The very next action is...&#10;&#10;When I'll do it:"></textarea>
                     </div>
                 </div>
                 <button class="notes-btn" onclick="toggleNotes('notes8')">📝 Plan</button>
@@ -380,10 +381,10 @@
             <div class="checklist-item">
                 <input type="checkbox" id="item9">
                 <div class="checklist-text">
-                    <label for="item9">I struggle to ask for help</label>
+                    <label for="item9">Who could I ask for support or encouragement right now?</label>
                     <div class="notes-box" id="notes9">
-                        <h4>Reflection & Action Plan:</h4>
-                        <textarea placeholder="When I needed help but didn't ask...&#10;&#10;One area I'll request support:"></textarea>
+                        <h4>Support Network:</h4>
+                        <textarea placeholder="People I can reach out to:&#10;1.&#10;2.&#10;&#10;What I'll ask for specifically:"></textarea>
                     </div>
                 </div>
                 <button class="notes-btn" onclick="toggleNotes('notes9')">📝 Plan</button>
@@ -392,10 +393,10 @@
             <div class="checklist-item">
                 <input type="checkbox" id="item10">
                 <div class="checklist-text">
-                    <label for="item10">I worry more about pleasing others than pleasing myself</label>
+                    <label for="item10">Can I visualize the satisfaction of completing this?</label>
                     <div class="notes-box" id="notes10">
-                        <h4>Reflection & Action Plan:</h4>
-                        <textarea placeholder="Recent people-pleasing example...&#10;&#10;How I'll prioritize myself next time:"></textarea>
+                        <h4>Visualization Exercise:</h4>
+                        <textarea placeholder="How I'll feel when done:&#10;&#10;What success looks like:"></textarea>
                     </div>
                 </div>
                 <button class="notes-btn" onclick="toggleNotes('notes10')">📝 Plan</button>
@@ -403,17 +404,17 @@
         </div>
         
         <div class="reflection">
-            <h2>Self-Worth Reflection</h2>
+            <h2>Motivation Reflection</h2>
             
             <div class="section">
-                <h3>What did you discover about your self-worth patterns?</h3>
-                <textarea id="discovery-reflection" placeholder="The most surprising realization was..."></textarea>
+                <h3>Which strategy was most helpful today?</h3>
+                <textarea id="strategy-reflection" placeholder="The most effective technique was..."></textarea>
                 
-                <h3>Which area will you focus on improving first?</h3>
-                <textarea id="focus-reflection" placeholder="I choose to work on... because..."></textarea>
+                <h3>What motivation obstacle did you overcome?</h3>
+                <textarea id="obstacle-reflection" placeholder="I pushed through..."></textarea>
                 
-                <h3>Write a letter to your future self about this commitment:</h3>
-                <textarea id="letter-reflection" placeholder="Dear Future Me..."></textarea>
+                <h3>Tomorrow's motivation commitment:</h3>
+                <textarea id="commitment-reflection" placeholder="I will maintain momentum by..."></textarea>
             </div>
         </div>
         
@@ -426,12 +427,12 @@
         <div class="instructions">
             <h3>How to Use This Checklist:</h3>
             <ol>
-                <li><strong>Check items</strong> that resonate with your current patterns</li>
-                <li><strong>Click 📝 Plan buttons</strong> to create specific action steps</li>
-                <li><strong>Complete reflections</strong> to solidify your insights</li>
-                <li><strong>Return regularly</strong> to track your growth</li>
+                <li><strong>Complete items</strong> whenever motivation dips</li>
+                <li><strong>Click 📝 Plan buttons</strong> to create personalized strategies</li>
+                <li><strong>Check items</strong> as you complete them</li>
+                <li><strong>Review reflections</strong> to track your motivation patterns</li>
             </ol>
-            <p><em>Remember: Each checkmark isn't criticism—it's an invitation to reclaim your worth.</em></p>
+            <p><em>Remember: Keep moving forward. One small action can reboot your whole mindset.</em></p>
         </div>
     </div>
 
@@ -470,9 +471,9 @@
             document.getElementById('progress-bar').textContent = Math.round(progress) + '%';
             document.getElementById('progress-percent').textContent = Math.round(progress);
             
-            // Show celebration if any checked (since this is a self-assessment)
+            // Show celebration if all checked
             document.getElementById('celebration').style.display = 
-                checked.length > 0 ? 'block' : 'none';
+                checked.length === checkboxes.length ? 'block' : 'none';
         }
         
         function saveProgress() {
@@ -480,17 +481,17 @@
                 checkboxes: Array.from(document.querySelectorAll('input[type="checkbox"]')).map(cb => cb.checked),
                 notes: Array.from(document.querySelectorAll('.notes-box textarea')).map(ta => ta.value),
                 reflections: {
-                    discovery: document.getElementById('discovery-reflection').value,
-                    focus: document.getElementById('focus-reflection').value,
-                    letter: document.getElementById('letter-reflection').value
+                    strategy: document.getElementById('strategy-reflection').value,
+                    obstacle: document.getElementById('obstacle-reflection').value,
+                    commitment: document.getElementById('commitment-reflection').value
                 }
             };
-            localStorage.setItem('selfWorthChecklist', JSON.stringify(data));
-            alert('Progress saved! Your insights are safe.');
+            localStorage.setItem('motivationChecklist', JSON.stringify(data));
+            alert('Progress saved! Your motivation strategies are stored.');
         }
         
         function loadProgress() {
-            const saved = JSON.parse(localStorage.getItem('selfWorthChecklist'));
+            const saved = JSON.parse(localStorage.getItem('motivationChecklist'));
             if (saved) {
                 // Load checkboxes
                 document.querySelectorAll('input[type="checkbox"]').forEach((cb, i) => {
@@ -503,15 +504,15 @@
                 });
                 
                 // Load reflections
-                document.getElementById('discovery-reflection').value = saved.reflections?.discovery || '';
-                document.getElementById('focus-reflection').value = saved.reflections?.focus || '';
-                document.getElementById('letter-reflection').value = saved.reflections?.letter || '';
+                document.getElementById('strategy-reflection').value = saved.reflections?.strategy || '';
+                document.getElementById('obstacle-reflection').value = saved.reflections?.obstacle || '';
+                document.getElementById('commitment-reflection').value = saved.reflections?.commitment || '';
             }
         }
         
         function resetProgress() {
             if (confirm('Reset all progress? Your notes will be cleared.')) {
-                localStorage.removeItem('selfWorthChecklist');
+                localStorage.removeItem('motivationChecklist');
                 location.reload();
             }
         }
